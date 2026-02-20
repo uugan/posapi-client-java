@@ -222,6 +222,74 @@ public class Example {
             System.err.println("Response headers: " + e.getResponseHeaders());
             e.printStackTrace();
         }
+        
+        try{
+            PostRestReceiptRequest post = new PostRestReceiptRequest()
+                    .branchNo("001")
+                    .totalAmount(BigDecimal.valueOf(5600))
+                    .totalVAT(BigDecimal.valueOf(500))
+                    .totalCityTax(BigDecimal.valueOf(100))
+                    .districtCode("2501")
+                    .merchantTin("110718991986")
+                    .posNo("001")
+                    .customerTin(null)
+                    .consumerNo("10038071")
+                    .type("B2C_RECEIPT")
+                    .inactiveId(null)
+                    .reportMonth(null)
+                    .billIdSuffix("01");
+
+// item
+            PostRestReceiptRequestReceiptItem item = new PostRestReceiptRequestReceiptItem()
+                    .name("Талх")
+                    .barCode("19059010880001")
+                    .barCodeType("GS1")
+                    .classificationCode("2349010")
+                    .taxProductCode(null)
+                    .measureUnit("ш")
+                    .qty(BigDecimal.valueOf(1))
+                    .unitPrice(BigDecimal.valueOf(5000))
+                    .totalVAT(BigDecimal.valueOf(500))
+                    .totalCityTax(BigDecimal.valueOf(100))
+                    .totalAmount(BigDecimal.valueOf(5600));
+
+// postRestReceiptRequestReceipt
+            PostRestReceiptRequestReceipt postRestReceiptRequestReceipt = new PostRestReceiptRequestReceipt()
+                    .totalAmount(BigDecimal.valueOf(5600))
+                    .taxType("VAT_ABLE")
+                    .merchantTin("110718991986")
+                    .customerTin(null)
+                    .totalVAT(BigDecimal.valueOf(500))
+                    .totalCityTax(BigDecimal.valueOf(100))
+                    .invoiceId(null)
+                    .bankAccountNo("")
+                    .iBan("")
+                    .items(java.util.Arrays.asList(item));
+
+// payments
+            PostRestReceiptRequestPayment payment = new PostRestReceiptRequestPayment()
+                    .code("CASH")
+                    .status("PAID")
+                    .paidAmount(BigDecimal.valueOf(5600));
+
+// attach lists
+            post.receipts(java.util.Arrays.asList(postRestReceiptRequestReceipt));
+            post.payments(java.util.Arrays.asList(payment));
+
+// optional: print serialized JSON to console
+//        System.out.println(JSON.serialize(post));
+
+            PostRestReceiptResponse response = api.postRestReceipt(post);
+        }catch (PosApiException e){
+            System.err.println("Exception when calling PosApi#deleteRestReceipt");
+            System.err.println("Status code: " + e.getCode());
+            System.err.println("Reason: " + e.getResponseBody());
+            System.err.println("Response headers: " + e.getResponseHeaders());
+            e.printStackTrace();
+        }
+        
+        
+        
         //why BigDecimal:
         // double inaccuracy
         double a = 0.1;
