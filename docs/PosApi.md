@@ -4,19 +4,19 @@ All URIs are relative to *http://localhost*
 
 | Method | HTTP request | Description |
 |------------- | ------------- | -------------|
-| [**deleteRestReceipt**](DefaultApi.md#deleteRestReceipt) | **DELETE** /rest/postRestReceiptRequestReceipt | Төлбөрийн баримт буцаах |
-| [**getApiInfoCheckBarcodeAll**](DefaultApi.md#getApiInfoCheckBarcodeAll) | **GET** /api/info/check/barcode/all | Баркод жагсаалтаар лавлах |
-| [**getApiInfoCheckBarcodeV2**](DefaultApi.md#getApiInfoCheckBarcodeV2) | **GET** /api/info/check/barcode/v2/{p4}/{p5}/{p1}/{p2}/{p3}/{p6} | БҮНА, бараа бүтээгдэхүүний ангилал, баркод лавлах |
-| [**getApiInfoCheckGetBranchInfo**](DefaultApi.md#getApiInfoCheckGetBranchInfo) | **GET** /api/info/check/getBranchInfo | District_code лавлах |
-| [**getApiInfoCheckGetInfo**](DefaultApi.md#getApiInfoCheckGetInfo) | **GET** /api/info/check/getInfo | Бүртгэлийн мэдээлэл лавлах |
-| [**getApiInfoCheckGetTinInfo**](DefaultApi.md#getApiInfoCheckGetTinInfo) | **GET** /api/info/check/getTinInfo | Татвар төлөгчийн дугаар лавлах /ТIN, Civil_id/ |
-| [**getApiInventoryStockGetStockQr**](DefaultApi.md#getApiInventoryStockGetStockQr) | **GET** /api/inventory/stock/getStockQr | ОАТ барааны баркодын мэдээлэл лавлах /QR/ |
-| [**getApiReceiptReceiptGetProductTaxCode**](DefaultApi.md#getApiReceiptReceiptGetProductTaxCode) | **GET** /api/postRestReceiptRequestReceipt/postRestReceiptRequestReceipt/getProductTaxCode | VAT_FREE, VAT_ZERO, NO_VAT бараа, үйлчилгээний код лавлах |
-| [**getRestBankAccountstinTIN**](DefaultApi.md#getRestBankAccountstinTIN) | **GET** /rest/bankAccounts | Банкны дансны мэдээлэл лавлах |
-| [**getRestInfo**](DefaultApi.md#getRestInfo) | **GET** /rest/info | Ажиллагааны мэдээлэл хүлээн авах |
-| [**getRestSendData**](DefaultApi.md#getRestSendData) | **GET** /rest/sendData | Төлбөрийн баримтын нэгдсэн системд мэдээлэл илгээх |
-| [**postApiTpiReceiptSaveOprMerchants**](DefaultApi.md#postApiTpiReceiptSaveOprMerchants) | **POST** /api/tpi/postRestReceiptRequestReceipt/saveOprMerchants | Оператороос мерчант бүртгэх хүсэлт илгээх |
-| [**postRestReceipt**](DefaultApi.md#postRestReceipt) | **POST** /rest/postRestReceiptRequestReceipt | Төлбөрийн баримт хадгалах |
+| [**deleteRestReceipt**](PosApi#deleteRestReceipt) | **DELETE** /rest/postRestReceiptRequestReceipt | Төлбөрийн баримт буцаах |
+| [**getApiInfoCheckBarcodeAll**](PosApi#getApiInfoCheckBarcodeAll) | **GET** /api/info/check/barcode/all | Баркод жагсаалтаар лавлах |
+| [**getApiInfoCheckBarcodeV2**](PosApi#getApiInfoCheckBarcodeV2) | **GET** /api/info/check/barcode/v2/{p4}/{p5}/{p1}/{p2}/{p3}/{p6} | БҮНА, бараа бүтээгдэхүүний ангилал, баркод лавлах |
+| [**getApiInfoCheckGetBranchInfo**](PosApi#getApiInfoCheckGetBranchInfo) | **GET** /api/info/check/getBranchInfo | District_code лавлах |
+| [**getApiInfoCheckGetInfo**](PosApi#getApiInfoCheckGetInfo) | **GET** /api/info/check/getInfo | Бүртгэлийн мэдээлэл лавлах |
+| [**getApiInfoCheckGetTinInfo**](PosApi#getApiInfoCheckGetTinInfo) | **GET** /api/info/check/getTinInfo | Татвар төлөгчийн дугаар лавлах /ТIN, Civil_id/ |
+| [**getApiInventoryStockGetStockQr**](PosApi#getApiInventoryStockGetStockQr) | **GET** /api/inventory/stock/getStockQr | ОАТ барааны баркодын мэдээлэл лавлах /QR/ |
+| [**getApiReceiptReceiptGetProductTaxCode**](PosApi#getApiReceiptReceiptGetProductTaxCode) | **GET** /api/postRestReceiptRequestReceipt/postRestReceiptRequestReceipt/getProductTaxCode | VAT_FREE, VAT_ZERO, NO_VAT бараа, үйлчилгээний код лавлах |
+| [**getRestBankAccountstinTIN**](PosApi#getRestBankAccountstinTIN) | **GET** /rest/bankAccounts | Банкны дансны мэдээлэл лавлах |
+| [**getRestInfo**](PosApi#getRestInfo) | **GET** /rest/info | Ажиллагааны мэдээлэл хүлээн авах |
+| [**getRestSendData**](PosApi#getRestSendData) | **GET** /rest/sendData | Төлбөрийн баримтын нэгдсэн системд мэдээлэл илгээх |
+| [**postApiTpiReceiptSaveOprMerchants**](PosApi#postApiTpiReceiptSaveOprMerchants) | **POST** /api/tpi/postRestReceiptRequestReceipt/saveOprMerchants | Оператороос мерчант бүртгэх хүсэлт илгээх |
+| [**postRestReceipt**](PosApi#postRestReceipt) | **POST** /rest/postRestReceiptRequestReceipt | Төлбөрийн баримт хадгалах |
 
 
 <a id="deleteRestReceipt"></a>
