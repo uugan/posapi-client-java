@@ -6,10 +6,6 @@ PosAPI 3.0 системийн API холболт зааврууд
   - Build date: 2026-02-20T23:06:56.543975400+08:00[Asia/Ulaanbaatar]
   - Generator version: 7.19.0
 
----
-stoplight-id: 8mw1byololjkv 
----
-
 ## ЦАХИМ ТӨЛБӨРИЙН БАРИМТЫН СИСТЕМ POS API 3.0
 
 ### Холбоо барих мэдээлэл
@@ -193,7 +189,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/posapi-client-java-3.0.jar`
+* `target/posapi-client-java-3.0.1.jar`
 * `target/lib/*.jar`
 
 ## Getting Started
