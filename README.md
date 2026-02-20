@@ -206,7 +206,7 @@ import com.github.uugan.posapi.api.PosApi;
 
 public class Example {
     public static void main(String[] args) {
-        PosApiClient defaultClient = Configuration.getDefaultApiClient();
+        PosApiClient defaultClient = Configuration.getPosAPIClient();
         defaultClient.setBasePath("http://localhost:8080");
 
         PosApi apiInstance = new PosApi(defaultClient);
@@ -268,19 +268,19 @@ All URIs are relative to *http://localhost*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*DefaultApi* | [**deleteRestReceipt**](docs/DefaultApi.md#deleteRestReceipt) | **DELETE** /rest/postRestReceiptRequestReceipt | Төлбөрийн баримт буцаах
-*DefaultApi* | [**getApiInfoCheckBarcodeAll**](docs/DefaultApi.md#getApiInfoCheckBarcodeAll) | **GET** /api/info/check/barcode/all | Баркод жагсаалтаар лавлах
-*DefaultApi* | [**getApiInfoCheckBarcodeV2**](docs/DefaultApi.md#getApiInfoCheckBarcodeV2) | **GET** /api/info/check/barcode/v2/{p4}/{p5}/{p1}/{p2}/{p3}/{p6} | БҮНА, бараа бүтээгдэхүүний ангилал, баркод лавлах
-*DefaultApi* | [**getApiInfoCheckGetBranchInfo**](docs/DefaultApi.md#getApiInfoCheckGetBranchInfo) | **GET** /api/info/check/getBranchInfo | District_code лавлах
-*DefaultApi* | [**getApiInfoCheckGetInfo**](docs/DefaultApi.md#getApiInfoCheckGetInfo) | **GET** /api/info/check/getInfo | Бүртгэлийн мэдээлэл лавлах
-*DefaultApi* | [**getApiInfoCheckGetTinInfo**](docs/DefaultApi.md#getApiInfoCheckGetTinInfo) | **GET** /api/info/check/getTinInfo | Татвар төлөгчийн дугаар лавлах /ТIN, Civil_id/
-*DefaultApi* | [**getApiInventoryStockGetStockQr**](docs/DefaultApi.md#getApiInventoryStockGetStockQr) | **GET** /api/inventory/stock/getStockQr | ОАТ барааны баркодын мэдээлэл лавлах /QR/
-*DefaultApi* | [**getApiReceiptReceiptGetProductTaxCode**](docs/DefaultApi.md#getApiReceiptReceiptGetProductTaxCode) | **GET** /api/postRestReceiptRequestReceipt/postRestReceiptRequestReceipt/getProductTaxCode | VAT_FREE, VAT_ZERO, NO_VAT бараа, үйлчилгээний код лавлах
-*DefaultApi* | [**getRestBankAccountstinTIN**](docs/DefaultApi.md#getRestBankAccountstinTIN) | **GET** /rest/bankAccounts | Банкны дансны мэдээлэл лавлах
-*DefaultApi* | [**getRestInfo**](docs/DefaultApi.md#getRestInfo) | **GET** /rest/info | Ажиллагааны мэдээлэл хүлээн авах
-*DefaultApi* | [**getRestSendData**](docs/DefaultApi.md#getRestSendData) | **GET** /rest/sendData | Төлбөрийн баримтын нэгдсэн системд мэдээлэл илгээх
-*DefaultApi* | [**postApiTpiReceiptSaveOprMerchants**](docs/DefaultApi.md#postApiTpiReceiptSaveOprMerchants) | **POST** /api/tpi/postRestReceiptRequestReceipt/saveOprMerchants | Оператороос мерчант бүртгэх хүсэлт илгээх
-*DefaultApi* | [**postRestReceipt**](docs/DefaultApi.md#postRestReceipt) | **POST** /rest/postRestReceiptRequestReceipt | Төлбөрийн баримт хадгалах
+*PosAPI* | [**deleteRestReceipt**](docs/PosAPI.md#deleteRestReceipt) | **DELETE** /rest/postRestReceiptRequestReceipt | Төлбөрийн баримт буцаах
+*PosAPI* | [**getApiInfoCheckBarcodeAll**](docs/PosAPI.md#getApiInfoCheckBarcodeAll) | **GET** /api/info/check/barcode/all | Баркод жагсаалтаар лавлах
+*PosAPI* | [**getApiInfoCheckBarcodeV2**](docs/PosAPI.md#getApiInfoCheckBarcodeV2) | **GET** /api/info/check/barcode/v2/{p4}/{p5}/{p1}/{p2}/{p3}/{p6} | БҮНА, бараа бүтээгдэхүүний ангилал, баркод лавлах
+*PosAPI* | [**getApiInfoCheckGetBranchInfo**](docs/PosAPI.md#getApiInfoCheckGetBranchInfo) | **GET** /api/info/check/getBranchInfo | District_code лавлах
+*PosAPI* | [**getApiInfoCheckGetInfo**](docs/PosAPI.md#getApiInfoCheckGetInfo) | **GET** /api/info/check/getInfo | Бүртгэлийн мэдээлэл лавлах
+*PosAPI* | [**getApiInfoCheckGetTinInfo**](docs/PosAPI.md#getApiInfoCheckGetTinInfo) | **GET** /api/info/check/getTinInfo | Татвар төлөгчийн дугаар лавлах /ТIN, Civil_id/
+*PosAPI* | [**getApiInventoryStockGetStockQr**](docs/PosAPI.md#getApiInventoryStockGetStockQr) | **GET** /api/inventory/stock/getStockQr | ОАТ барааны баркодын мэдээлэл лавлах /QR/
+*PosAPI* | [**getApiReceiptReceiptGetProductTaxCode**](docs/PosAPI.md#getApiReceiptReceiptGetProductTaxCode) | **GET** /api/postRestReceiptRequestReceipt/postRestReceiptRequestReceipt/getProductTaxCode | VAT_FREE, VAT_ZERO, NO_VAT бараа, үйлчилгээний код лавлах
+*PosAPI* | [**getRestBankAccountstinTIN**](docs/PosAPI.md#getRestBankAccountstinTIN) | **GET** /rest/bankAccounts | Банкны дансны мэдээлэл лавлах
+*PosAPI* | [**getRestInfo**](docs/PosAPI.md#getRestInfo) | **GET** /rest/info | Ажиллагааны мэдээлэл хүлээн авах
+*PosAPI* | [**getRestSendData**](docs/PosAPI.md#getRestSendData) | **GET** /rest/sendData | Төлбөрийн баримтын нэгдсэн системд мэдээлэл илгээх
+*PosAPI* | [**postApiTpiReceiptSaveOprMerchants**](docs/PosAPI.md#postApiTpiReceiptSaveOprMerchants) | **POST** /api/tpi/postRestReceiptRequestReceipt/saveOprMerchants | Оператороос мерчант бүртгэх хүсэлт илгээх
+*PosAPI* | [**postRestReceipt**](docs/PosAPI.md#postRestReceipt) | **POST** /rest/postRestReceiptRequestReceipt | Төлбөрийн баримт хадгалах
 
 
 ## Documentation for Models
