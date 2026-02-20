@@ -1,4 +1,4 @@
-# posapi-client
+# posapi-client-java
 
 PosAPI 3.0 системийн API холболт зааврууд
 - API version: 3.0
@@ -170,7 +170,7 @@ Configure repository as below:
 ```xml
 <dependency>
   <groupId>com.github.uugan.pos</groupId>
-  <artifactId>posapi-client</artifactId>
+  <artifactId>posapi-client-java</artifactId>
   <version>3.0</version>
   <scope>compile</scope>
 </dependency>
@@ -182,12 +182,12 @@ Add this dependency to your project's build file:
 
 ```groovy
   repositories {
-    mavenCentral()     // Needed if the 'posapi-client' jar has been published to maven central.
-    mavenLocal()       // Needed if the 'posapi-client' jar has been published to the local maven repo.
+    mavenCentral()     // Needed if the 'posapi-client-java' jar has been published to maven central.
+    mavenLocal()       // Needed if the 'posapi-client-java' jar has been published to the local maven repo.
   }
 
   dependencies {
-     implementation "com.github.uugan.pos:posapi-client:3.0"
+     implementation "com.github.uugan.posapi:posapi-client-java:3.0"
   }
 ```
 
@@ -201,7 +201,7 @@ mvn clean package
 
 Then manually install the following JARs:
 
-* `target/posapi-client-3.0.jar`
+* `target/posapi-client-java-3.0.jar`
 * `target/lib/*.jar`
 
 ## Getting Started

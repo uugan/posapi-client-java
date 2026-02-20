@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.uugan.pos</groupId>
-    <artifactId>posapi-client</artifactId>
+    <groupId>com.github.uugan.posapi</groupId>
+    <artifactId>posapi-client-java</artifactId>
     <packaging>jar</packaging>
-    <name>posapi-client</name>
+    <name>posapi-client-java</name>
     <version>3.0</version>
     <description>PosAPI 3.0 Java Client</description>
     <properties>

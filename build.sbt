@@ -1,7 +1,7 @@
 lazy val root = (project in file(".")).
   settings(
-    organization := "com.github.uugan.pos",
-    name := "posapi-client",
+    organization := "com.github.uugan.posapi",
+    name := "posapi-client-java",
     version := "3.0",
     scalaVersion := "2.11.12",
     scalacOptions ++= Seq("-feature"),
