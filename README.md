@@ -137,6 +137,10 @@ Building the API client library requires:
 
 To install the API client library to your local Maven repository, simply execute:
 
+
+	
+
+
 ```shell
 mvn clean install
 ```
@@ -152,6 +156,16 @@ Refer to the [OSSRH Guide](http://central.sonatype.org/pages/ossrh-guide.html) f
 ### Maven users
 
 Add this dependency to your project's POM:
+Configure repository as below:
+```xml
+<repositories>
+    <repository>
+	    <id>jitpack.io</id>
+	    <url>https://jitpack.io</url>
+	</repository>
+</repositories>
+```
+
 
 ```xml
 <dependency>
