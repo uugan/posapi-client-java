@@ -1,4 +1,5 @@
 # posapi-client-java
+[![](https://jitpack.io/v/uugan/posapi-client-java.svg)](https://jitpack.io/#uugan/posapi-client-java)
 
 PosAPI 3.0 системийн API холболт зааврууд
 - API version: 3.0
